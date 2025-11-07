@@ -1,0 +1,22 @@
+{
+  "name": "dropbox-ipad-case",
+  "version": "1.0.0",
+  "description": "A project for designing an iPad case for Dropbox using Bootstrap.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build script not defined yet.'"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "iPad",
+    "case",
+    "Dropbox",
+    "Bootstrap"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
