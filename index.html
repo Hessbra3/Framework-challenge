@@ -44,26 +44,22 @@
                 <svg width="220" height="300" viewBox="0 0 220 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="iPad case preview">
                   <!-- outer black border -->
                   <rect x="2" y="2" rx="20" ry="20" width="216" height="296" fill="none" stroke="#000000" stroke-width="4" />
-                  <!-- case fill with a secondary darker light-blue stroke to create an inner border -->
-                  <rect x="8" y="8" rx="16" ry="16" width="204" height="284" fill="#0ea5e9" stroke="#0b6ea8" stroke-width="4" />
+                  <!-- case fill with a secondary darker light-blue stroke to create an inner border (stroke reduced by half) -->
+                  <rect x="8" y="8" rx="16" ry="16" width="204" height="284" fill="#0ea5e9" stroke="#0b6ea8" stroke-width="2" />
                   <!-- subtle inner screen overlay -->
                   <rect x="22" y="28" rx="4" ry="4" width="176" height="244" fill="#ffffff" opacity="0.06"/>
                   <circle cx="110" cy="42" r="12" fill="#ffffff" opacity="0.12" />
 
-                    <!-- Dropbox-like mark (6 diamonds) using Dropbox blue -->
-                    <g transform="translate(110,150)" fill="#007EE5" aria-hidden="false">
-                      <!-- top-left -->
-                      <polygon points="-28,-42 -16,-30 -28,-18 -40,-30" />
-                      <!-- top-right -->
-                      <polygon points="28,-42 40,-30 28,-18 16,-30" />
-                      <!-- middle-left -->
-                      <polygon points="-14,-18 -2,-6 -14,6 -26,-6" />
-                      <!-- middle-right -->
-                      <polygon points="14,-18 26,-6 14,6 2,-6" />
-                      <!-- bottom-left -->
-                      <polygon points="-28,6 -16,18 -28,30 -40,18" />
-                      <!-- bottom-right -->
-                      <polygon points="28,6 40,18 28,30 16,18" />
+                    <!-- Dropbox-like logo: 4 small white diamonds closely grouped -->
+                    <g transform="translate(110,150)" fill="#ffffff" aria-hidden="false">
+                      <!-- top-left diamond -->
+                      <polygon points="-16,-28 -8,-20 -16,-12 -24,-20" />
+                      <!-- top-right diamond -->
+                      <polygon points="16,-28 24,-20 16,-12 8,-20" />
+                      <!-- bottom-left diamond -->
+                      <polygon points="-8,-4 0,4 -8,12 -16,4" />
+                      <!-- bottom-right diamond -->
+                      <polygon points="8,-4 16,4 8,12 0,4" />
                     </g>
                 </svg>
               </div>
