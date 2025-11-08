@@ -12,10 +12,6 @@
       <a class="navbar-brand" href="#">Dropbox iPad Case</a>
      
       <div class="collapse navbar-collapse" id="navMain">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Design</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-        </ul>
       </div>
     </div>
   </nav>
@@ -37,7 +33,6 @@
 
             <div class="d-flex gap-2 mt-4">
               <a class="btn button btn-lg" href="#buy">Buy now</a>
-              <a class="btn btn-outline-secondary btn-lg" href="#gallery">See gallery</a>
             </div>
           </div>
 
@@ -55,17 +50,21 @@
                   <rect x="22" y="28" rx="4" ry="4" width="176" height="244" fill="#ffffff" opacity="0.06"/>
                   <circle cx="110" cy="42" r="12" fill="#ffffff" opacity="0.12" />
 
-                  <!-- Dropbox-like logo centered on the case. Color chosen to sit between the case blue and black border -->
-                  <g transform="translate(110,150)" fill="#0b6ea8" aria-hidden="false">
-                    <!-- top-left diamond -->
-                    <polygon points="-24,-28 -12,-16 -24,-4 -36,-16" />
-                    <!-- top-right diamond -->
-                    <polygon points="24,-28 36,-16 24,-4 12,-16" />
-                    <!-- bottom-left diamond -->
-                    <polygon points="-12,8 0,20 -12,32 -24,20" />
-                    <!-- bottom-right diamond -->
-                    <polygon points="12,8 24,20 12,32 0,20" />
-                  </g>
+                    <!-- Dropbox-like mark (6 diamonds) using Dropbox blue -->
+                    <g transform="translate(110,150)" fill="#007EE5" aria-hidden="false">
+                      <!-- top-left -->
+                      <polygon points="-28,-42 -16,-30 -28,-18 -40,-30" />
+                      <!-- top-right -->
+                      <polygon points="28,-42 40,-30 28,-18 16,-30" />
+                      <!-- middle-left -->
+                      <polygon points="-14,-18 -2,-6 -14,6 -26,-6" />
+                      <!-- middle-right -->
+                      <polygon points="14,-18 26,-6 14,6 2,-6" />
+                      <!-- bottom-left -->
+                      <polygon points="-28,6 -16,18 -28,30 -40,18" />
+                      <!-- bottom-right -->
+                      <polygon points="28,6 40,18 28,30 16,18" />
+                    </g>
                 </svg>
               </div>
             </div>
