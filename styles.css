@@ -1,0 +1,92 @@
+/* styles.css — starter styles for Framework-challenge */
+:root {
+	--bg: #f8fafc;
+	--card: #ffffff;
+	--text: #0f172a;
+	--muted: #64748b;
+	--accent: #3b82f6;
+	--radius: 8px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+	max-width: 960px;
+	margin: 2rem auto;
+	padding: 1rem;
+	background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.85));
+	border-radius: var(--radius);
+	box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+h1, h2, h3 {
+	margin: 0 0 0.5rem 0;
+	line-height: 1.15;
+}
+
+p {
+	margin: 0 0 1rem 0;
+	color: var(--muted);
+}
+
+a {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+.button {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background: var(--accent);
+	color: white;
+	border-radius: 6px;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+}
+
+/* Utility */
+.text-muted { color: var(--muted); }
+.flex { display: flex; }
+.center { display:flex; align-items:center; justify-content:center; }
+
+@media (max-width:600px) {
+	.container { margin: 1rem; padding: 0.75rem; }
+}
+
+/* Product / hero styles */
+.hero { background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%); }
+.device-mock { display:inline-block; padding:18px; border-radius:18px; background:linear-gradient(180deg, rgba(15,23,42,0.02), rgba(15,23,42,0.04)); }
+.case-preview { width: 220px; height: 300px; display:inline-block; }
+
+.img-card img { display:block; width:100%; height: auto; object-fit:cover; }
+
+.swatch { width:36px; height:36px; border-radius:8px; border:1px solid rgba(15,23,42,0.06); cursor:pointer; }
+
+.price { color: var(--text); }
+
+/* Adjust section spacing */
+section { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+
+/* Buttons */
+.button { background: var(--accent); border-color: transparent; }
+.button:hover { background: #2563eb; }
+
+@media (max-width: 768px) {
+	.case-preview { width: 160px; height: 220px; }
+}
+
