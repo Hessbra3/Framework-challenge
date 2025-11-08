@@ -1,4 +1,3 @@
-// ...existing code...
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,6 +53,17 @@
                   <rect x="8" y="8" rx="16" ry="16" width="204" height="284" fill="#0ea5e9" />
                   <rect x="22" y="28" rx="4" ry="4" width="176" height="244" fill="#ffffff" opacity="0.06"/>
                   <circle cx="110" cy="42" r="12" fill="#ffffff" opacity="0.12" />
+                  <!-- Dropbox-style logo (centered) -->
+                  <g transform="translate(110,150)" fill="#ffffff" opacity="0.95" aria-hidden="false">
+                    <!-- top-left diamond -->
+                    <polygon points="-28,-34 -14,-20 -28,-6 -42,-20" />
+                    <!-- top-right diamond -->
+                    <polygon points="28,-34 42,-20 28,-6 14,-20" />
+                    <!-- bottom-left diamond -->
+                    <polygon points="-28,6 -14,20 -28,34 -42,20" />
+                    <!-- bottom-right diamond -->
+                    <polygon points="28,6 42,20 28,34 14,20" />
+                  </g>
                 </svg>
               </div>
             </div>
@@ -121,32 +131,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Purchase / Specs -->
-    <section id="buy" class="py-5 bg-white">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <h2 class="h4 mb-2">Pick your color</h2>
-            <div class="d-flex gap-2 flex-wrap mb-3">
-              <button class="swatch" aria-label="blue swatch" style="background:#0ea5e9"></button>
-              <button class="swatch" aria-label="black swatch" style="background:#0f172a"></button>
-              <button class="swatch" aria-label="sand swatch" style="background:#f1f5f9"></button>
-            </div>
-            <p class="text-muted mb-0">Compatible with Apple Pencil and official Smart Keyboard.</p>
-          </div>
-          <div class="col-md-4 text-md-end mt-3 mt-md-0">
-            <div class="d-inline-block">
-              <div class="price display-6 fw-bold">$49</div>
-              <div class="text-muted small">Free shipping available</div>
-              <a href="#" class="btn button mt-3">Add to cart</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
