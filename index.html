@@ -48,21 +48,26 @@
             <!-- Device mockup -->
             <div class="device-mock shadow-sm">
               <div class="case-preview">
-                <!-- simple visual representation -->
+                <!-- refined visual representation with borders and centered logo -->
                 <svg width="220" height="300" viewBox="0 0 220 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="iPad case preview">
-                  <rect x="8" y="8" rx="16" ry="16" width="204" height="284" fill="#0ea5e9" />
+                  <!-- outer black border -->
+                  <rect x="2" y="2" rx="20" ry="20" width="216" height="296" fill="none" stroke="#000000" stroke-width="4" />
+                  <!-- case fill with a secondary darker light-blue stroke to create an inner border -->
+                  <rect x="8" y="8" rx="16" ry="16" width="204" height="284" fill="#0ea5e9" stroke="#0b6ea8" stroke-width="4" />
+                  <!-- subtle inner screen overlay -->
                   <rect x="22" y="28" rx="4" ry="4" width="176" height="244" fill="#ffffff" opacity="0.06"/>
                   <circle cx="110" cy="42" r="12" fill="#ffffff" opacity="0.12" />
-                  <!-- Dropbox-style logo (centered) -->
-                  <g transform="translate(110,150)" fill="#ffffff" opacity="0.95" aria-hidden="false">
+
+                  <!-- Dropbox-like logo centered on the case. Color chosen to sit between the case blue and black border -->
+                  <g transform="translate(110,150)" fill="#0b6ea8" aria-hidden="false">
                     <!-- top-left diamond -->
-                    <polygon points="-28,-34 -14,-20 -28,-6 -42,-20" />
+                    <polygon points="-24,-28 -12,-16 -24,-4 -36,-16" />
                     <!-- top-right diamond -->
-                    <polygon points="28,-34 42,-20 28,-6 14,-20" />
+                    <polygon points="24,-28 36,-16 24,-4 12,-16" />
                     <!-- bottom-left diamond -->
-                    <polygon points="-28,6 -14,20 -28,34 -42,20" />
+                    <polygon points="-12,8 0,20 -12,32 -24,20" />
                     <!-- bottom-right diamond -->
-                    <polygon points="28,6 42,20 28,34 14,20" />
+                    <polygon points="12,8 24,20 12,32 0,20" />
                   </g>
                 </svg>
               </div>
